@@ -8,33 +8,33 @@
     <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
-    <section class="cabeza"> 
-    <H1>Hospital Militar</H1>
-    <p>Programación II BTPI</p>
-    </section>
-    
-<nav class="nav-bar"> 
+    <header class="cabeza">
+    <h1>Hospital Militar</h1>
+    <p>Programación II | 12 BTP - Informática</p>
+  </header>
+
+  <nav class="nav-bar">
     <ul> 
-        <li><a href="index.php">Hospital Militar</a></li>
+        <li><a href="index.php">Inicio</a></li>
         <li><a href="pacientes.php">Pacientes</a></li>
         <li><a href="citas.php">Citas</a></li>
         <li><a href="especialidades.php">Especialidades</a></li>
         <li><a href="historial_medico.php">Historial Médico</a></li>
         <li><a href="medicos.php">Médicos</a></li>
     </ul>
-</nav>
+  </nav>
 
-<body>
-    <div class="container">
-        <h1>Form Especialidades</h1>
-        <form>
-            <div class="form-group">
-                <label for="especialidad">Especialidad</label>
-                <input type="text" id="especialidad">
-            </div>
-            <button type="submit" class="btn-enviar">Enviar</button>
-        </form>
-    </div>
+  <main class="formulario">
+    <h2>Registro de Especialidades</h2>
+    <form method="post" action="conexion.php">
+        <div class="form-group">
+        <label for="especialidad">Nombre de la Especialidad</label>
+        <input type="text" id="especialidad" required />
+      </div>
+
+      <button type="submit" class="btn-enviar">Registrar Especialidad</button>
+    </form>
+  </main>
 </body>
 <footer>
     <p>&copy; 2025 Repaso HTML CSS. Todos los derechos reservados.</p>

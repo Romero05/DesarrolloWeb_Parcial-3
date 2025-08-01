@@ -8,47 +8,53 @@
     <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
-    <section class="cabeza"> 
-    <H1>Hospital Militar</H1>
-    <p>Programación II BTPI</p>
-    </section>
-    
-<nav class="nav-bar"> 
+    <header class="cabeza">
+    <h1>Hospital Militar</h1>
+    <p>Programación II | 12 BTP - Informática</p>
+  </header>
+
+  <nav class="nav-bar">
     <ul> 
-        <li><a href="index.php">Hospital Militar</a></li>
+        <li><a href="index.php">Inicio</a></li>
         <li><a href="pacientes.php">Pacientes</a></li>
         <li><a href="citas.php">Citas</a></li>
         <li><a href="especialidades.php">Especialidades</a></li>
         <li><a href="historial_medico.php">Historial Médico</a></li>
         <li><a href="medicos.php">Médicos</a></li>
     </ul>
-</nav>
-<div class="container">
-        <h1>Form Medicos</h1>
-        <form>
-            <div class="form-group">
-                <label for="idMedico">Id Medico</label>
-                <input type="text" id="idMedico">
-            </div>
-            <div class="form-group">
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre">
-            </div>
-            <div class="form-group">
-                <label for="especialidad">Especialidad</label>
-                <input type="text" id="especialidad">
-            </div>
-            <div class="form-group">
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono">
-            </div>
-            <div class="form-group">
-                <label for="correo">Correo</label>
-                <input type="email" id="correo">
-            </div>
-            <button type="submit" class="btn-enviar">Enviar</button>
-        </form>
-    </div>
+  </nav>
+
+  <main class="formulario">
+    <h2>Registro de Médicos</h2>
+    <form method="post" action="conexion.php">
+      <div class="form-group">
+        <label for="idMedico">ID del Médico</label>
+        <input type="text" id="idMedico" required />
+      </div>
+
+      <div class="form-group">
+        <label for="nombre">Nombre Completo</label>
+        <input type="text" id="nombre" required />
+      </div>
+
+      <div class="form-group">
+        <label for="especialidad">Especialidad</label>
+        <input type="text" id="especialidad" required />
+      </div>
+
+      <div class="form-group">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" required />
+      </div>
+
+      <div class="form-group">
+        <label for="correo">Correo Electrónico</label>
+        <input type="email" id="correo" required />
+      </div>
+
+      <button type="submit" class="btn-enviar">Enviar</button>
+    </form>
+  </main>
 </body>
 <footer>
     <p>&copy; 2025 Repaso HTML CSS. Todos los derechos reservados.</p>

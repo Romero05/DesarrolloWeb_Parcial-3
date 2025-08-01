@@ -14,7 +14,7 @@
     
 <nav class="nav-bar"> 
     <ul> 
-        <li><a href="index.php">Hospital Militar</a></li>
+        <li><a href="index.php">Inicio</a></li>
         <li><a href="pacientes.php">Pacientes</a></li>
         <li><a href="citas.php">Citas</a></li>
         <li><a href="especialidades.php">Especialidades</a></li>

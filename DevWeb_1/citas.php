@@ -8,47 +8,47 @@
     <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
-    <section class="cabeza"> 
-    <H1>Hospital Militar</H1>
-    <p>Programación II BTPI</p>
-    </section>
-    
-<nav class="nav-bar"> 
+    <header class="cabeza">
+    <h1>Hospital Militar</h1>
+    <p>Programación II | 12 BTP - Informática</p>
+  </header>
+
+  <nav class="nav-bar">
     <ul> 
-        <li><a href="index.php">Hospital Militar</a></li>
+        <li><a href="index.php">Inicio</a></li>
         <li><a href="pacientes.php">Pacientes</a></li>
         <li><a href="citas.php">Citas</a></li>
         <li><a href="especialidades.php">Especialidades</a></li>
         <li><a href="historial_medico.php">Historial Médico</a></li>
         <li><a href="medicos.php">Médicos</a></li>
     </ul>
-</nav>
-<div class="container">
-        <h1>Form Citas</h1>
-        <form>
-            <div class="form-group">
-                <label for="idCita">Id Cita</label>
-                <input type="text" id="idCita">
-            </div>
-            <div class="form-group">
-                <label for="idpaciente">Id Paciente</label>
-                <input type="text" id="idpaciente">
-            </div>
-            <div class="form-group">
-                <label for="idMedico">Medico</label>
-                <input type="text" id="idMedico">
-            </div>
-            <div class="form-group">
-                <label for="fecha">Fecha</label>
-                <input type="date" id="fecha">
-            </div>
-            <div class="form-group">
-                <label for="motivo">Motivo</label>
-                <input type="text" id="motivo">
-            </div>
-            <button type="submit" class="btn-enviar">Enviar</button>
-        </form>
-    </div>
+
+  <main class="formulario">
+    <h2>Registro de Citas Médicas</h2>
+    <form method="post" action="conexion.php">
+      <div class="form-group">
+        <label for="idPaciente">ID del Paciente</label>
+        <input type="text" id="idPaciente" required />
+      </div>
+
+      <div class="form-group">
+        <label for="idMedico">Médico</label>
+        <input type="text" id="idMedico" required />
+      </div>
+
+      <div class="form-group">
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" required />
+      </div>
+
+      <div class="form-group">
+        <label for="motivo">Motivo de la Cita</label>
+        <input type="text" id="motivo" required />
+      </div>
+
+      <button type="submit" class="btn-enviar">Registrar Cita</button>
+    </form>
+  </main>
 </body>
 <footer>
     <p>&copy; 2025 Repaso HTML CSS. Todos los derechos reservados.</p>
